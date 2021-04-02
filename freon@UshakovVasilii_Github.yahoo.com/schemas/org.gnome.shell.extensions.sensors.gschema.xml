@@ -1,18 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <schemalist gettext-domain="gse-sensors">
 
-  <schema id="org.gnome.shell.extensions.freon" path="/org/gnome/shell/extensions/freon/">
+  <schema
+    id="org.gnome.shell.extensions.freon"
+    path="/org/gnome/shell/extensions/freon/"
+  >
 
     <key type="i" name="update-time">
       <default>5</default>
       <summary>Seconds before next update</summary>
-      <description>This is the seconds after CPU temperature extension updates the data from the syetem</description>
+      <description
+      >This is the seconds after CPU temperature extension updates the data from the syetem</description>
     </key>
 
     <key type="s" name="unit">
       <default>'centigrade'</default>
       <summary>Unit</summary>
-      <description>The unit ('centigrade' or 'fahrenheit') the extension should display the temperature in</description>
+      <description
+      >The unit ('centigrade' or 'fahrenheit') the extension should display the temperature in</description>
     </key>
     
     <key type="b" name="show-degrees-on-panel">
@@ -30,7 +35,8 @@
     <key name="hot-sensors" type="as">
       <default>["__average__", "__max__"]</default>
       <summary>Sensors to show in panel</summary>
-      <description>Select the sensord whose values has to be shown in the panel</description>
+      <description
+      >Select the sensord whose values has to be shown in the panel</description>
     </key>
 
     <key type="b" name="show-decimal-value">
@@ -54,13 +60,15 @@
     <key type="s" name="drive-utility">
       <default>'udisks2'</default>
       <summary>Utility for detect HDD/SSD temperature</summary>
-      <description>Utility for detect HDD/SSD temperature ('none', 'hddtemp' or 'udisks2')</description>
+      <description
+      >Utility for detect HDD/SSD temperature ('none', 'hddtemp' or 'udisks2')</description>
     </key>
 
     <key type="s" name="gpu-utility">
       <default>'none'</default>
       <summary>Utility for detect video card temperature</summary>
-      <description>Utility for detect video card temperature ('none', 'nvidia-settings' or 'aticonfig')</description>
+      <description
+      >Utility for detect video card temperature ('none', 'nvidia-settings' or 'aticonfig')</description>
     </key>
 
     <key type="s" name="position-in-panel">
@@ -72,19 +80,27 @@
     <key name="panel-box-index" type="i">
       <default>0</default>
       <summary>Index in panel box</summary>
-      <description>Index within the selected panel box (0: first, 1: second, ..., -1: last)</description>
+      <description
+      >Index within the selected panel box (0: first, 1: second, ..., -1: last)</description>
     </key>
 
     <key type="b" name="group-temperature">
       <default>true</default>
       <summary>Group temperature menu items</summary>
-      <description>Group more than three sensors temperature menu items</description>
+      <description
+      >Group more than three sensors temperature menu items</description>
     </key>
 
     <key type="b" name="group-voltage">
       <default>true</default>
       <summary>Group voltage menu items</summary>
       <description>Group more than three voltage menu items</description>
+    </key>
+
+    <key type="b" name="show-wiki">
+      <default>true</default>
+      <summary>Show Wiki Menu Entry</summary>
+      <description>Show or Hide the Wiki Menu Entry</description>
     </key>
 
     <key type="b" name="debug">
